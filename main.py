@@ -81,8 +81,72 @@ num_2 = input("Enter the second number: ")
 print(num_1 + num_2) 
 my_input = input("Enter something: ") 
 print(my_input * 3) 
-x = int(input())
-y = int(input())
-x = x / y
-y = y / x
-print(y)
+def reverse(string):
+	string = "".join(reversed(string))
+	return string
+s = "Chris"
+print ("The reversed string(using reversed) is : ")
+print (reverse(s))
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1])
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:5])
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.append("orange")
+thistuple = tuple(y)
+thistuple = ("apple", "banana", "cherry")
+y = ("orange",)
+thistuple += y
+
+print(thistuple)
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+
+(green, *tropic, red) = fruits
+
+print(green)
+print(tropic)
+print(red)
+
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x)
+
+  thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+
+  thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i = i + 1
+  tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
+fruits = ("apple", "banana", "cherry")
+mytuple = fruits * 2
+
+print(mytuple)
+
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+thisset = {"apple", "banana", "cherry"}
+
+for x in thisset:
+  print(x)
+
+  thisset = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
+
+thisset.update(tropical)
+
+print(thisset)
