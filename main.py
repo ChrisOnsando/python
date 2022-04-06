@@ -81,12 +81,15 @@ num_2 = input("Enter the second number: ")
 print(num_1 + num_2) 
 my_input = input("Enter something: ") 
 print(my_input * 3) 
+#Reversing a string
 def reverse(string):
 	string = "".join(reversed(string))
 	return string
 s = "Chris"
 print ("The reversed string(using reversed) is : ")
 print (reverse(s))
+
+#Python tuples
 thistuple = ("apple", "banana", "cherry")
 print(thistuple)
 thistuple = ("apple", "banana", "cherry")
@@ -171,18 +174,23 @@ print(type(a))
 print(type(b))
 print(type(c))
 
-
+#Returns any random numbers between 1-10
 import random
 
 print(random.randrange(1, 10))
+
+#Returns chromotagraphy
 for x in "chromatography":
   print(x) 
+
+#prints the variable a
 a = """Lorem ipsum dolor sit amet
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua."""
 print(a)
 
+#Returns length of a string
 a = "Hello, Chromotography!"
 print(len(a))
 s = "Chromotography!, World!"
@@ -190,5 +198,30 @@ print(s[2:5])
 
 s = "Chromotography!, World!"
 print(s[:5])
+
+#Converts the begginning of each letter to uppercase
 s = "hello chromotography, world!"
 print(s.upper())
+
+#Add space between the two strings
+a = "Hello"
+b = "Chromotography! World"
+c = a + " " + b
+print(c)
+
+#Joining two strings using format method
+age = 20
+txt = "My name is Chris, and I am {}"
+print(txt.format(age))
+
+quantity = 3
+itemno = 356
+price = 100.10
+myorder = "I want {} pieces of item {} for {} dollars($)."
+print(myorder.format(quantity, itemno, price))
+
+quantity = 3
+itemno = 567
+price = 49.95
+myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+print(myorder.format(quantity, itemno, price)) 
