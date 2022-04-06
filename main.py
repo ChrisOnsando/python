@@ -185,3 +185,10 @@ print(a)
 
 a = "Hello, Chromotography!"
 print(len(a))
+s = "Chromotography!, World!"
+print(s[2:5])
+
+s = "Chromotography!, World!"
+print(s[:5])
+s = "hello chromotography, world!"
+print(s.upper())
